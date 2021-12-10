@@ -1,0 +1,47 @@
+.btn {
+	border: none;
+	transition: 0.2s;
+	border-radius: 10px;
+	padding: 6px;
+	z-index: -1;
+	cursor: pointer;
+}
+
+.btn-sm {
+	font-size: small;
+}
+
+.btn-md {
+	font-size: medium;
+	padding-inline: 15px;
+}
+
+.btn-lg {
+	font-size: large;
+}
+
+/* DAY MODE */
+
+.btn-day {
+	background-color: inherit;
+	outline: solid 2px #37474f;
+	color: #37474f;
+	transition: 0.4s;
+}
+
+.btn-day:hover {
+	outline: solid 600px #37474f;
+}
+
+/* NIGHT MODE */
+
+.btn-night {
+	outline: solid 2px #eceff1;
+	color: #eceff1;
+	background-color: #455a64;
+	transition: 0.4s;
+}
+
+.btn-night:hover {
+	outline: solid 600px #eceff1;
+}

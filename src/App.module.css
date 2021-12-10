@@ -1,0 +1,18 @@
+.app {
+	text-align: center;
+	height: 100vh;
+	max-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.app-bg-day {
+	background-color: #b0bec5;
+	color: #263238;
+}
+
+.app-bg-night {
+	background-color: #263238;
+	color: #eceff1;
+}

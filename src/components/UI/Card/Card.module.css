@@ -1,0 +1,52 @@
+.card-body {
+	margin: 4px;
+	padding: 15px;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: 0.2s;
+	overflow: hidden;
+}
+
+/* LIGHT MODE */
+
+.card-day {
+	background-color: #cfd8dc;
+	box-shadow: 0px 3px 6px -2px #455a64;
+}
+
+.card-day:hover {
+	box-shadow: 0px 3px 6px -1px #455a64;
+}
+
+/* DARK MODE */
+
+.card-night {
+	background-color: #455a64;
+	box-shadow: 0px 3px 4px -2px black;
+}
+
+.card-night:hover {
+	box-shadow: 0px 5px 5px -2px black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.header {
+	/* border: solid 1px black; */
+	font-size: 40px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.body {
+	/* border: solid 1px black; */
+	text-align: justify;
+	margin-top: 7px;
+}
+
+.footer {
+	/* border: solid 1px black; */
+	margin-top: 10px;
+	text-align: end;
+}

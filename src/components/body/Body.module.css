@@ -1,0 +1,55 @@
+.main {
+	display: flex;
+	height: 100%;
+	width: 200vw;
+}
+
+.container {
+	margin: 10px;
+	height: calc(100% - 20px);
+	width: calc(100% - 20px);
+	display: flex;
+	transition: 0.6s;
+}
+
+.slide {
+	transform: translateX(-101.6%);
+}
+
+.left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.right {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+.upload {
+	transition: 0.2s;
+}
+
+.upload:hover {
+	transform: translate(5px, -5px);
+	box-shadow: -7px 7px 5px -1px rgba(30, 30, 60, 0.5);
+}
+
+.circle {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: black;
+	transition: 1s;
+	transform: translateX(270px) translateY(100px);
+}
+
+.neg {
+	outline: solid 200px black;
+}
