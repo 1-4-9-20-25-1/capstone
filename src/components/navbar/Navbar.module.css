@@ -1,49 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .nav {
-	max-height: 60px;
-	padding: 7px;
-	display: flex;
+  padding: 7px;
+  display: flex;
 }
 
 /* DARK MODE */
 
 .nav-bg-night {
-	background-color: #455a64;
+  background-color: #455a64;
 }
 
 /* LIGHT MODE */
 
 .nav-bg-day {
-	background-color: #cfd8dc;
-	box-shadow: 0px 3px 6px -2px #455a64;
+  background-color: #cfd8dc;
+  box-shadow: 0px 3px 6px -2px #455a64;
+  display: flex;
+  /* align-items: center; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
 .title {
-	font-size: 30px;
-	margin-top: 5px;
-	margin-left: 10px;
-	letter-spacing: 2px;
-	font-family: 'Luckiest Guy', cursive;
+  font-size: 30px;
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+  outline: solid 1px black;
+  display: none;
 }
 
 .icon-holder {
-	display: inline-block;
-	margin-left: auto;
-	margin-right: 10px;
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.icon-holder.day {
+  border-radius: 50%;
+  background: #cfd8dc;
+  box-shadow: -5px 5px 18px #9ba2a5, 5px -5px 18px #ffffff;
+}
+
+.icon-holder.night {
+  border-radius: 104px;
+  background: #536c78;
+  box-shadow: inset -5px 5px 10px #4a606b, inset 5px -5px 10px #5c7885;
 }
 
 .icon {
-	height: 35px;
-	width: 35px;
-	transition: 1s;
-	padding: 5px;
-	border-radius: 50%;
-	cursor: pointer;
+  height: 25px;
+  transition: 1s;
+  padding: 5px;
+  border-radius: 50%;
+  vertical-align: bottom;
 }
 
 .change {
-	transform: rotate(360deg);
+  transform: rotate(360deg);
 }

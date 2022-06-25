@@ -4,46 +4,46 @@ import sunIcon from '../../icons/sun.svg';
 import moonIcon from '../../icons/moon.svg';
 
 function Navbar(props) {
-	const { theme, changeTheme } = props;
+    const { theme, changeTheme } = props;
 
-	const {
-		nav,
-		change,
-		icon: iconClass,
-		'icon-holder': iconHolder,
-		'nav-bg-day': navBgDay,
-		'nav-bg-night': navBgNight,
-		title,
-	} = classes;
+    const {
+        nav,
+        change,
+        icon: iconClass,
+        'icon-holder': iconHolder,
+        'nav-bg-day': navBgDay,
+        'nav-bg-night': navBgNight,
+        title,
+    } = classes;
 
-	const [night, setNight] = useState(false);
+    const [night, setNight] = useState(false);
 
-	const changeThemeHandler = () => {
-		setNight(!night);
-		(async () => {
-			await setTimeout(() => {
-				if (theme === 'day') {
-					changeTheme('night');
-				} else {
-					changeTheme('day');
-				}
-			}, 100);
-		})();
-	};
+    const changeThemeHandler = () => {
+        setNight(!night);
+        (async () => {
+            await setTimeout(() => {
+                if (theme === 'day') {
+                    changeTheme('night');
+                } else {
+                    changeTheme('day');
+                }
+            }, 200);
+        })();
+    };
 
-	return (
-		<div className={`${nav} ${theme === 'day' ? navBgDay : navBgNight}`}>
-			<div className={title}>SAVE TIME</div>
-			<div className={iconHolder}>
-				<img
-					src={theme === 'day' ? moonIcon : sunIcon}
-					className={`${iconClass} ${night ? change : ''}`}
-					onClick={changeThemeHandler}
-					alt='sum moon'
-				/>
-			</div>
-		</div>
-	);
+    return (
+        <div className={`${nav} ${theme === 'day' ? navBgDay : navBgNight}`}>
+            <div className={`${title} ${classes[theme]}`}>SAVE TIME</div>
+            <div className={`${iconHolder} ${classes[theme]}`}>
+                <img
+                    src={theme === 'day' ? moonIcon : sunIcon}
+                    className={`${iconClass} ${night ? change : ''}`}
+                    onClick={changeThemeHandler}
+                    alt='sum moon'
+                />
+            </div>
+        </div>
+    );
 }
 
 export default Navbar;

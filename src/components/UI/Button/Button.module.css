@@ -1,47 +1,46 @@
 .btn {
-	border: none;
-	transition: 0.2s;
-	border-radius: 10px;
-	padding: 6px;
-	z-index: -1;
-	cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    border-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
 }
 
 .btn-sm {
-	font-size: small;
+    font-size: small;
 }
 
 .btn-md {
-	font-size: medium;
-	padding-inline: 15px;
+    font-size: medium;
+    padding-inline: 15px;
 }
 
 .btn-lg {
-	font-size: large;
+    font-size: large;
 }
 
 /* DAY MODE */
 
 .btn-day {
-	background-color: inherit;
-	outline: solid 2px #37474f;
-	color: #37474f;
-	transition: 0.4s;
+    background-color: inherit;
+    outline: solid 2px #37474f;
+    color: #37474f;
+    transition: outline 0.2s ease-in-out;
 }
 
 .btn-day:hover {
-	outline: solid 600px #37474f;
+    outline: solid 1000px #37474f;
 }
 
 /* NIGHT MODE */
 
 .btn-night {
-	outline: solid 2px #eceff1;
-	color: #eceff1;
-	background-color: #455a64;
-	transition: 0.4s;
+    outline: solid 2px #cfd8dc;
+    color: #cfd8dc;
+    background-color: #455a64;
+    transition: 0.2s ease-in-out;
 }
 
 .btn-night:hover {
-	outline: solid 600px #eceff1;
+    outline: solid 600px #cfd8dc;
 }

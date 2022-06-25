@@ -16,8 +16,9 @@
 	align-self: center;
 	padding-top: 5px;
 	cursor: pointer;
-	transition: 1s ease-in-out;
+	transition: 0.5s ease-in-out;
 }
+
 .open {
 	transform: translate(1200px, 0px) rotate(360deg);
 	/* transform: rotate(360deg); */

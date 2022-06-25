@@ -1,52 +1,86 @@
-.card-body {
-	margin: 4px;
-	padding: 15px;
-	border-radius: 4px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	transition: 0.2s;
-	overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.card {
+    margin: 4px;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out, color 0s;
+    overflow: hidden;
 }
 
 /* LIGHT MODE */
 
-.card-day {
-	background-color: #cfd8dc;
-	box-shadow: 0px 3px 6px -2px #455a64;
+.card.day {
+    background-color: #cfd8dc;
+    box-shadow: 0px 3px 6px -2px #455a64;
 }
 
-.card-day:hover {
-	box-shadow: 0px 3px 6px -1px #455a64;
+.card.day.hovered {
+    color: #eceff1;
+}
+
+.card.day:hover {
+    box-shadow: 0px 3px 6px -1px #455a64;
+}
+
+.header {
+    /* border: solid 1px black; */
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 1;
+    transition: all 0.2s ease-in-out, color 0s;
+}
+
+.header.day {
+    border-radius: 8px;
+    background: #cfd8dc;
+    box-shadow: -6px 6px 12px #b8c0c4, 6px -6px 12px #e6f0f4;
+}
+
+.header.day.hovered {
+    border-radius: 8px;
+    background: #37474f;
+    box-shadow: -5px 5px 10px #2a363c, 5px -5px 10px #445862;
 }
 
 /* DARK MODE */
 
-.card-night {
-	background-color: #455a64;
-	box-shadow: 0px 3px 4px -2px black;
+.card.night {
+    background-color: #455a64;
+    box-shadow: 0px 3px 4px -2px black;
 }
 
-.card-night:hover {
-	box-shadow: 0px 5px 5px -2px black;
+.card.night:hover {
+    box-shadow: 0px 5px 5px -2px black;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.card.night.hovered {
+    color: #37474f;
+}
 
-.header {
-	/* border: solid 1px black; */
-	font-size: 40px;
-	font-family: 'Bebas Neue', cursive;
+.header.night {
+    border-radius: 8px;
+    background: #455a64;
+    box-shadow: -6px 6px 11px #3d4f58, 6px -6px 11px #4d6570;
+}
+
+.header.night.hovered {
+    border-radius: 8px;
+    background: #cfd8dc;
+    box-shadow: -6px 6px 12px #b8c0c4, 6px -6px 12px #e6f0f4;
 }
 
 .body {
-	/* border: solid 1px black; */
-	text-align: justify;
-	margin-top: 7px;
+    /* border: solid 1px black; */
+    text-align: justify;
+    margin-top: 7px;
 }
 
 .footer {
-	/* border: solid 1px black; */
-	margin-top: 10px;
-	text-align: end;
+    /* border: solid 1px black; */
+    margin-top: 10px;
+    text-align: end;
 }

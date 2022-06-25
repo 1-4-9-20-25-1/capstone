@@ -41,15 +41,33 @@ a {
 	box-shadow: -7px 7px 5px -1px rgba(30, 30, 60, 0.5);
 }
 
-.circle {
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	background-color: black;
-	transition: 1s;
-	transform: translateX(270px) translateY(100px);
-}
-
 .neg {
 	outline: solid 200px black;
+}
+
+.pd {
+	animation: pulse-pd 1s infinite;
+}
+
+.pl {
+	animation: pulse-pl 1s infinite;
+}
+
+@keyframes pulse-pl {
+	0% {
+	}
+	50% {
+		text-shadow: 0 0 20px #ffafaf;
+	}
+	100% {
+	}
+}
+@keyframes pulse-pd {
+	0% {
+	}
+	50% {
+		text-shadow: 0 0 10px #ff0000;
+	}
+	100% {
+	}
 }
